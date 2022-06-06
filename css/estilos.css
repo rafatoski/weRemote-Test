@@ -1,0 +1,207 @@
+
+/*-------------------------------------------*\ 
+   Indice
+   - reset
+   - variantes
+   - Tipografia
+   - Botones
+   - Estilos General
+   - Navegacion 
+   - Carousel
+   - Jumbotron
+   - Extras - RWD
+\*-------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+/*-------------------------------------------*\
+    Colores
+\*-------------------------------------------*/
+:root {
+    --color-primario:#486DB7;/*Indigo*/
+    --color-secundario:#F778B9;/*Pink*/
+    --color-alterno:#B378FF;/*Purple*/
+    --gris-oscuro: #222;
+    --gris-claro: #87A2B1;
+    --fuente: 'Lato', sans-serif;
+}
+/*-------------------------------------------*\
+    Fonts
+\*-------------------------------------------*/
+body{
+    font-family: var(--fuente);
+    font-size: 14px;
+}
+h1{
+    font-size: 3.052rem;
+    font-weight: bold;
+    line-height: auto;
+}
+h2{
+    font-size: 2.4441rem;
+    font-weight: bold;
+}
+h3{
+    font-size: 1.953rem;
+    font-weight: medium;
+}
+h4{
+    font-size: 1.563rem;
+    font-weight: medium;
+}
+h5{ 
+    font-size: 1.25rem;
+}
+p{
+    font-size: 1rem;
+    font-weight: normal;
+}
+/*-------------------------------------------*\
+    botones
+\*-------------------------------------------*/
+.btn {
+    padding: 0.65rem 1.35rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+.btn-primary {
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+.btn-primary:hover {
+    color: whitesmoke;
+    background: #2A4781;
+    border-color: var(--color-primario);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.btn-outline-primary {
+    color: var(--color-primario);
+    border-color:var(--color-primario);
+}
+.btn-outline-primary:hover {
+    color: whitesmoke;
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+.btn-outline-primary:hover svg{
+    fill: white;
+}
+.btn-secondary {
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+.btn-secondary:hover {
+    color: whitesmoke;
+    background:#C8498A;
+    border-color: var(--color-secundario);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.btn-outline-secondary {
+    color: var(--color-secundario);
+    border-color:var(--color-secundario);
+}
+.btn-outline-secondary:hover {
+    color: whitesmoke;
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+.btn-outline-secondary:hover svg{
+    fill: white;
+}
+a.link{
+    color:var(--color-primario);
+    text-decoration: none;
+}
+a.link:hover{
+    text-decoration: underline;
+}
+/*-------------------------------------------*\
+    Estilos Generales
+\*-------------------------------------------*/
+.heading{
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    color:var(--gris-claro);
+}
+.heading span{
+    color: #111;
+}
+footer{
+    background-color:#fff;
+    color: var(--gris-claro);
+}
+footer .quick-links a{
+    text-decoration: none;
+    font-size: 18px;
+    color:var(--gris-claro);
+    line-height: 2ex;
+    font-weight: 700;
+}
+footer .quick-links a:hover{
+    color: var(--color-primario);
+}
+/*-------------------------------------------*\
+    Navegacion
+\*-------------------------------------------*/
+nav{
+    display: inherit;
+}
+.nav-link{
+    font-weight: bold;
+    color: #444;
+    font-size:18px ;
+}
+.nav-link:hover{
+    color: var(--color-primario);
+} 
+/*-------------------------------------------*\
+    Carousel
+\*-------------------------------------------*/
+.carousel-indicators{
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: var(--color-primario);
+}
+/*-------------------------------------------*\
+    Extras - Responsive Web Design
+\*-------------------------------------------*/
+.color-principal{
+    color: var(--color-primario);
+}
+.color-secundario{
+    color: var(--color-secundario);
+}
+.bg-principal{
+    background-color: var(--color-primario);
+}
+ 
+@media (min-width: 992px) { 
+    body{
+        font-size: 16px;
+    }
+    
+    .img-xl-no-fluid{
+        max-width: fit-content;
+        height: auto;
+    }
+    .carousel-inner{
+        padding: 25px 50px;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+ }
